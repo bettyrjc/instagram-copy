@@ -1,0 +1,215 @@
+body{
+  margin: 0;
+  font-family: arial;
+  background: #fafafa;
+}
+p span{
+  font-size: 12px;
+}
+.header{
+  background: white;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  top:0;
+  height: 77px;
+  width: 100%;
+}
+.name,
+.icons{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.name{
+  font-size: 26px;
+}
+
+.lupa{
+  border-color: lightgray;
+  border-style:solid;
+  border-radius: 3px;
+  padding: 10px 20px 10px 25px;
+  background-image:url("https://img.icons8.com/material/50/000000/search.png");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x:5px;
+  background-color: #FAFAFA;
+}
+
+.icons img{
+  height: 30px;
+  width: 30px;
+  padding-right: 5px;
+}
+
+.hero{
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: 200px 600px;
+  justify-content: center;
+  align-content: center;
+  /* border-bottom: 1px solid lightgray; */
+}
+
+figure{
+  margin: 0px;
+}
+img{
+  margin: 0px;
+}
+.img-perfil img{
+  height: 150px;
+  width:150px;
+  border-radius: 50%;
+
+}
+h1{
+  margin:0px;
+}
+.info p{
+  margin: 0px;
+}
+.info{
+  display: grid;
+  grid-auto-rows: 30px 25px;
+  grid-template-columns:120px 120px 120px;
+  grid-gap: 15px;
+
+}
+
+.info button{
+  border-color: lightgray;
+  border-radius: 5px;
+  background-color: transparent;
+  height: 100%;
+  width: 70%;
+  justify-items:flex-end;
+}
+.info img{
+  align-items: start;
+  justify-items: start;
+}
+.bio{
+  padding-top:15px;
+  font-size: 15px;
+}
+
+.modificacion{
+  display: grid;
+  grid-template-columns: 120px 80px 100px 100px;
+  justify-content: center;
+  justify-items: center;
+
+  padding-top: 20px;
+  font-family: monospace;
+}
+.modificacion a{
+  text-decoration: none;
+  color: lightgray;
+  font-weight: bold;
+}
+
+ .modificacion a:hover {
+  color: black;
+}
+
+.post-list {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 293px));
+  justify-content: center;
+  grid-gap: 28px;
+}
+.post {
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+.post-image {
+  margin: 0;
+}
+.post-image img {
+  width: 100%;
+  vertical-align: top;
+}
+.post-overlay {
+  background: rgba(0,0,0, .4);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+
+}
+
+.post:hover .post-overlay {
+  display: flex;
+}
+
+.post-likes,
+.post-comments {
+  width: 80px;
+  margin: 5px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+/* destacadas */
+.destacadas{
+  display: flex;
+  justify-content: center;
+  height:  100px;
+  border-bottom: 1px solid lightgray;
+}
+.important_1{
+  margin-left: 1%;
+
+}
+.otra-image{
+  width: 78px;
+  height: 78px;
+
+}
+.otra-image img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+ 
+}
+.otra_0{
+  background: #F2F2F2;
+  width: 75px;
+  height: 75px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+}
+.otra_0 img{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 22px;
+  left: 22px;
+}
+.text{
+  text-align: center;
+  margin: 0;
+  font-size: 10px;
+  color: gray
+}
+@media screen and (max-width: 768px) {
+  .hero,
+  .post-list {
+    grid-gap: 3px;
+  }
+}
+
